@@ -13,6 +13,7 @@ function handleSocketEvents(socket, robot) {
     });
 
     socket.on(constants.MOUSE_CLICK, ({ button, double }) => {
+        console.log('click', button)
         robot.mouseClick(button, double);
     })
 }

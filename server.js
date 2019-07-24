@@ -4,12 +4,12 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('./app');
 var http = require('http');
 var robot = require('robotjs');
 var os = require('os');
 
-var handleSocketEvents = require('../socket');
+var handleSocketEvents = require('./socket');
 
 
 /**
