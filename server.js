@@ -96,6 +96,9 @@ function onError(error) {
 
 function onListening() {
     Object.keys(ifaces).forEach(ifname =>
-      ifaces[ifname].forEach(iface =>
-        console.log('listening on', iface.address, 'and port', port)));
+      ifaces[ifname].forEach(iface => {
+        if(!iface.internal && iface.family === 'IPv4')
+        console.log(`Can access on your network with this http://${iface.address}:${port}`)
+      }
+    ));
 }
