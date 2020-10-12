@@ -4,26 +4,24 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "lodash": "^4.17.15",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "socket.io-client": "^2.2.0",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1",
-    "robotjs": "^0.5.1",
-    "socket.io": "^2.2.0"
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "lodash": "^4.17.20",
+    "morgan": "^1.10.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.3",
+    "robotjs": "^0.6.0",
+    "socket.io": "^2.3.0",
+    "socket.io-client": "^2.3.1"
   },
   "scripts": {
     "start": "npm run build && node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+    "eject": "react-scripts eject",
+    "lint": "standard && eslint"
   },
   "browserslist": {
     "production": [
@@ -37,6 +35,31 @@
       "last 1 safari version"
     ]
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Hasan Raza",
+  "contributors": [
+    "Alfred Dagenais <jesuis@alfreddagenais.com> (https://www.alfreddagenais.com)"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-standard": "^4.0.1",
+    "standard": "^14.3.4"
+  },
+  "standard": {
+    "globals": [
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "expect",
+      "fetch",
+      "it",
+      "shallowMount",
+      "shallowMountView"
+    ]
+  }
 }
