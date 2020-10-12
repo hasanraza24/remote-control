@@ -5,6 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "ejs": "^3.1.5",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1",
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
     "lodash": "^4.17.20",
@@ -14,7 +21,8 @@
     "react-scripts": "^3.4.3",
     "robotjs": "^0.6.0",
     "socket.io": "^2.3.0",
-    "socket.io-client": "^2.3.1"
+    "socket.io-client": "^2.3.1",
+    "standard": "^14.3.4"
   },
   "scripts": {
     "start": "npm run build && node server.js",
@@ -40,16 +48,7 @@
     "Alfred Dagenais <jesuis@alfreddagenais.com> (https://www.alfreddagenais.com)"
   ],
   "license": "ISC",
-  "devDependencies": {
-    "eslint": "^7.11.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.21.4",
-    "eslint-plugin-standard": "^4.0.1",
-    "standard": "^14.3.4"
-  },
+  "devDependencies": {},
   "standard": {
     "globals": [
       "afterEach",
