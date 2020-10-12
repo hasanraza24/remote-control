@@ -8,6 +8,9 @@ const sockets = {
   },
   mouseClick (payload) {
     socket.emit(constants.MOUSE_CLICK, payload)
+  },
+  eventLog (payload) {
+    socket.emit(constants.EVENT_LOG, payload)
   }
 }
 
