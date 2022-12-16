@@ -10,7 +10,7 @@
     "react-scripts": "3.0.1",
     "socket.io-client": "^2.2.0",
     "ejs": "~2.6.1",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "robotjs": "^0.5.1",
